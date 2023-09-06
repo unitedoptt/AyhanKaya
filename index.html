@@ -1,0 +1,1136 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="author" content="">
+  <meta name="description" content="">
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ayhan Kaya</title>
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="img/favicon.png">
+
+  <!-- CSS Files -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/circle.css" rel="stylesheet">
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+  <link href="css/fm.revealator.jquery.min.css" rel="stylesheet">
+  <link href="css/tiny-slider.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- Color Stylesheet -->
+  <link href="css/colors/red-color.css" rel="stylesheet">
+
+  <!-- Google Fonts -->
+
+
+  <style type="text/css">
+    .timee {
+      color: #000000;
+      font-size: 14px;
+      padding: 3px 12px;
+      display: inline-block;
+      margin-bottom: 12px;
+      border-radius: 5px;
+      font-weight: 500;
+      box-shadow: 0 2px 7px rgb(0 0 0 / 5%);
+      background-color: bisque;
+      opacity: .8;
+    }
+  </style>
+
+
+  <style type="text/css">
+    /* Position the image container (needed to position the left and right arrows) */
+
+
+    /* Hide the images by default */
+    .mySlides {
+      display: none;
+    }
+
+    /* Add a pointer when hovering over the thumbnail images */
+    .cursor {
+      cursor: pointer;
+    }
+
+    /* Next & previous buttons */
+    .prev,
+    .next {
+      cursor: pointer;
+      position: absolute;
+      top: 42%;
+      width: auto;
+      padding: 16px;
+      margin-top: -50px;
+      color: white;
+      font-weight: bold;
+      font-size: 20px;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+
+    /* Container for image text */
+    .caption-container {
+      text-align: center;
+      background-color: #222;
+      padding: 2px 16px;
+      color: white;
+    }
+
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    /* Six columns side by side */
+    .column {
+      float: left;
+      width: 16.66%;
+    }
+
+    /* Add a transparency effect for thumnbail images */
+    .demo {
+      opacity: 0.6;
+    }
+
+    .active,
+    .demo:hover {
+      opacity: 1;
+    }
+  </style>
+
+</head>
+
+<body class="light">
+  <!-- Preloader-->
+  <div class="vfx-loader">
+    <div class="loader-wrapper">
+      <div class="loader-content">
+        <div class="loader-dot dot-1"></div>
+        <div class="loader-dot dot-2"></div>
+        <div class="loader-dot dot-3"></div>
+        <div class="loader-dot dot-4"></div>
+        <div class="loader-dot dot-5"></div>
+        <div class="loader-dot dot-6"></div>
+        <div class="loader-dot dot-7"></div>
+        <div class="loader-dot dot-8"></div>
+        <div class="loader-dot dot-center"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header Starts -->
+  <header class="header" id="navbar-collapse-toggle">
+    <!-- Fixed Navigation Starts -->
+    <ul class="icon-menu d-none d-lg-block revealator-slideup revealator-once revealator-delay1">
+      <li class="icon-box tooltip active"><i class="fa fa-home"></i> <a href="#home"></a><span
+          class="tooltiptext tooltip-right">Home</span></li>
+      <li class="icon-box tooltip"><i class="fa fa-id-card"></i> <a href="#about"></a><span
+          class="tooltiptext tooltip-right">About Me</span></li>
+      <li class="icon-box tooltip"><i class="fa fa-image"></i> <a href="#exp"></a><span
+          class="tooltiptext tooltip-right">My Experience</span></li>
+      <li class="icon-box tooltip"><i class="fa fa-envelope"></i> <a href="#contact"></a><span
+          class="tooltiptext tooltip-right">Contact Me</span></li>
+
+    </ul>
+    <!-- Fixed Navigation Ends -->
+    <!-- Mobile Menu Starts -->
+    <nav class="d-block d-lg-none">
+      <div id="menuToggle">
+        <input type="checkbox" />
+        <span></span> <span></span> <span></span>
+        <ul class="list-unstyled" id="menu">
+          <li class="tooltip active"><a href="#home"><i class="fa fa-home"></i></a><span
+              class="tooltiptext tooltip-right">Home</span></li>
+          <li class="tooltip"><a href="#about"><i class="fa fa-id-card"></i></a><span
+              class="tooltiptext tooltip-right">About Me</span></li>
+          <li class="tooltip"><a href="#exp"><i class="fa fa-image"></i></a><span class="tooltiptext tooltip-right">My
+              Experience</span></li>
+          <li class="tooltip"><a href="#contact"><i class="fa fa-envelope"></i></a><span
+              class="tooltiptext tooltip-right">Contact Me</span></li>
+
+        </ul>
+      </div>
+    </nav>
+    <!-- Mobile Menu Ends -->
+  </header>
+  <!-- Header Ends -->
+  <!-- Main Content Starts -->
+  <div id="home" class="home">
+    <section
+      class="container-fluid main-container container-home p-0 hero-area-block utf-element-cover-bg element-cover-bg revealator-slideup revealator-once revealator-delay1"
+      style="background-image:url(img/hero_img_1.jpg);">
+      <!--<div class="color-block d-none d-lg-block"></div>-->
+      <div class="row utf-home-details-container align-items-center">
+        <div class="col-12 col-lg-7 offset-lg-3 utf-home-details text-center text-sm-center ">
+          <div>
+            <img src="img/img-mobile.jpg" class="img-fluid main-img-mobile hero-d-none d-sm-block d-lg-none"
+              alt="my picture" />
+            <h6 class="mb-0 d-block d-lg-block">Hi I'm Ayhan Kaya</h6>
+            <h1><span>I Am a</span><span class="typed-words"></span></h1>
+            <p>Highly adaptable professional DevOps and AWS Certified Cloud engineer who is passionate about the
+              automation of IT processes
+              with 3 + years of experience.
+
+
+            </p>
+            <a href="#about" class="btn btn-about">About Me <i class="fa fa-user-circle"></i></a>
+            <a href="#contact" class="btn btn-contact">Get in Touch <i class="fa fa-envelope"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="utf-fixed-wrapper">
+        <!-- Languages list -->
+        <div class="utf-fixed-block block-right">
+          <ul class="list-unstyled languages-list">
+            <li><a href="" target="_blank"><span class="single-language"> Green Card Holder </span></a></li>
+
+          </ul>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <!-- Main Content Ends -->
+
+
+  <!-- Page Title Starts -->
+  <div id="about" class="about">
+    <section class="title-section text-center text-sm-center revealator-slideup revealator-once revealator-delay1">
+      <!-- <p class="utf-section-description">About Main Info</p>	 -->
+      <h1>About <span>ME</span></h1>
+      <div class="animated-bar"></div>
+      <p class="text-max-700">
+
+        <i class="fa fa-diamond" aria-hidden="true" style="color: #77894d;"></i>
+        &nbsp; DevOps Engineer / Cloud Engineer &nbsp;
+        <i class="fa fa-diamond" aria-hidden="true" style="color: #77894d;"></i>
+
+
+
+
+
+
+      </p>
+    </section>
+    <!-- Page Title Ends -->
+
+    <!-- Main Content Starts -->
+    <section class="main-content revealator-slideup revealator-once revealator-delay1">
+      <div class="container">
+        <div class="row">
+
+          <!-- Personal Info Starts -->
+          <div class="col-12 col-lg-12 col-xl-12">
+            <div class="row">
+
+              <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12 utf-about-user-img">
+                <img src="img/04.jpg" class="img-fluid main-img-mobile" alt="my picture" />
+
+                <!-- <div class="mySlides">
+    <div class="numbertext">1 / 5</div>
+    <img src="img/01.jpg" style="width:100%">
+  </div>
+
+ <div class="mySlides">
+    <div class="numbertext">2 / 5</div>
+    <img src="img/02.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 5</div>
+    <img src="img/03.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">4 / 5</div>
+    <img src="img/04.jpg" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">5 / 5</div>
+    <img src="img/05.jpg" style="width:100%">
+  </div>
+
+ 
+ 
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  
+ </div> -->
+
+
+              </div>
+              <div class="row col-xl-7 col-lg-7 col-md-12 utf-about-dtl">
+                <div class="col-12 mb-3">
+                  <h2 style="font-size: 30px;">Ayhan Kaya</h2>
+
+
+                  <ul style="text-align: justify;font-weight: 400;
+    line-height: 1.8;
+    color: #000000;
+    text-align: justify;
+    margin-left: -25px;">
+                    <li>I embrace teamwork and also able to work independently. </li>
+                    <li>Equipped with remarkable problem solving,multitasking, time management, social and leadership
+                      skills.</li>
+                    <li>Expert in designing and building effective Continuous Integration and Delivery (CI/CD) pipelines
+                      using containerization, orchestration, monitoring, infrastructure automation tools, and
+                      configuration
+                      management tools with cloud technology solutions.</li>
+
+
+                  </ul>
+
+                  </p><!-- <p>
+•	Well organized, effective communicator, conscientious multi-tasker, and understand client and costumer requirements
+</p> -->
+                </div>
+                <div class="col-12 mt-3">
+                  <a href="Ayhan_Kaya_Resume.pdf" target="_blank" class="btn btn-download">Download My CV <i
+                      class="fa fa-download"></i></a>
+                  <a href="#contact" class="btn btn-hire">Hire Me! <i class="fa fa-file"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Personal Info Ends -->
+          <!-- Boxes Starts -->
+          <!--   <div class="col-12 col-lg-12 col-xl-12 pt-5 mt-lg-0 pb-5">
+        <div class="row">
+          <div class="col-6 col-lg-3 col-sm-4 col-xs-12">
+            <div class="utf-box-stats with-margin">
+			  <i class="fa fa-camera"></i>
+              <p class="m-0 position-relative">Photography</p>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3 col-sm-4 col-xs-12">
+            <div class="utf-box-stats with-margin">
+			  <i class="fa fa-film"></i>
+              <p class="m-0 position-relative">Hiking & Adventure</p>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3 col-sm-4 col-xs-12">
+            <div class="utf-box-stats with-margin">
+			  <i class="fa fa-cutlery"></i>
+              <p class="m-0 position-relative">Cooking</p>
+            </div>
+          </div>
+         
+           <div class="col-6 col-lg-3 col-sm-4 col-xs-12">
+             <a target="_blank" href="https://www.instagram.com/karmaaaspheree/">
+            <div class="utf-box-stats with-margin">
+        <i class="fa fa-instagram"></i>
+              <p class="m-0 position-relative">Instagram</p>
+            </div>
+              </a>
+          </div>
+      
+          		 
+     <i class="fa-solid fa-bowl-rice"></i>
+        </div>
+      </div> -->
+          <!-- Boxes Ends -->
+        </div>
+
+        <!-- Skills Starts -->
+
+        <!-- Skills Ends -->
+        <div class="row">
+          <div class="col-lg-12 mt-5">
+            <h3 class="col-title">Projects</h3>
+            <div class="utf-resume-box">
+              <ul>
+                <li>
+                  <div class="icon"></div>
+
+                  <h5>The Petclinic Microservices Project</h5>
+                  <p><b style="color:#77894d">•</b> Developed a Dockerized web application using Java Spring Boot and
+                    Spring Cloud Frameworks, integrated with a MySQL
+                    database.
+
+                  </p>
+
+                  <p><b style="color:#77894d">•</b> Implemented full microservices architecture and established CI/CD
+                    pipelines for automated deployment on a Kubernetes cluster
+                    with &nbsp;&nbsp;&nbsp;comprehensive monitoring. Managed the Kubernetes cluster efficiently using
+                    Rancher.
+                  </p>
+                </li>
+
+                <li>
+                  <div class="icon"></div>
+
+                  <h5>Web Page Application (PostgreSQL-Nodejs-React) deployed on EC2&#39;s with Ansible and Docker</h5>
+                  <p><b style="color:#77894d">•</b> The Web-Page Application was designed to deploy a web page using
+                    Node.js and React Frameworks on the AWS Cloud
+                    Infrastructure, facilitated by &nbsp;&nbsp;&nbsp;Ansible.
+
+                  </p>
+
+
+                </li>
+
+                <li>
+                  <div class="icon"></div>
+
+                  <h5>Dockerization of Bookstore Web API (Python Flask) with MySQL</h5>
+                  <p><b style="color:#77894d">•</b> Developed the Bookstore Web App API for educational purposes,
+                    focusing on understanding application dockerization.
+
+                  </p>
+
+
+                </li>
+
+                <li>
+                  <div class="icon"></div>
+
+                  <h5>Microservice Architecture for Phonebook Web Application (Python Flask) with MySQL using Kubernetes
+                  </h5>
+                  <p><b style="color:#77894d">•</b> Created frontend and backend services, both interacting with a
+                    dedicated database service and skillfully managed them using
+                    Kubernetes &nbsp;&nbsp;&nbsp;deployment.
+
+                  </p>
+
+
+                </li>
+
+                <li>
+                  <div class="icon"></div>
+
+                  <h5>Phonebook Application (Python Flask) deployed on AWS environment with Terraform</h5>
+                  <p><b style="color:#77894d">•</b> Spearheaded the development of a Python Flask-based Phonebook
+                    Application, empowering users to effectively manage
+                    phonebook records with &nbsp;&nbsp;&nbsp;seamless search, addition, update, and deletion
+                    capabilities.
+
+                  </p>
+
+
+                </li>
+
+
+
+
+
+
+
+
+
+                <!--  <li>
+              <div class="icon"></div>
+              <span class="time">May 2011</span> 
+              <h5>Bachelor of Science in Mechanical Engineering <span class="place">Hwa Hsia University of Technology, New Taipei City,Taiwan</span></h5>
+             
+            </li> -->
+
+
+
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Experience & Education Starts -->
+
+        <div id="exp" class="row">
+          <div class="col-lg-12 m-15px-tb">
+            <h3 class="col-title">Work Experience</h3>
+            <div class="utf-resume-box">
+              <ul>
+                <li>
+                  <div class="icon"></div>
+                  <span class="time">June 2020 – Present</span>
+                  <h5>Cloud &amp; DevOps Engineer | NioyaTech LLC, Tysons Corner, Tysons, VA (Remote)</h5>
+                  <p><b style="color:#77894d">•</b> Developed scripting technologies and coded applications using
+                    Python, enabling efficient automation and workflow
+                    optimization.<br>
+                    <b style="color:#77894d">•</b> MUsed Terraform and Cloudformation to create and manage AWS resources
+                    and other services troughout different projects.<br>
+                    <b style="color:#77894d">•</b> Spearheaded and successfully managed Containerization and
+                    Virtualization Projects, leveraging
+                    cutting-edge technologies like
+                    Docker and &nbsp;&nbsp;&nbsp;Kubernetes to optimize application deployment processes and enhance
+                    overall system
+                    flexibility.<br>
+                    <b style="color:#77894d">•</b> Provisined and configured over 20 application deployment using
+                    Ansible and Ansible playbooks.<br>
+                    <b style="color:#77894d">•</b> Established and diligently maintained fully automated CI/CD pipelines
+                    for seamless code
+                    deployment, leveraging with Jenkins
+                    and GitLab, which &nbsp;&nbsp;&nbsp;significantly accelerated software release cycles and ensured
+                    enhanced
+                    reliability.<br>
+                    <b style="color:#77894d">•</b> Proficiently monitored, analyzed, and reported performance statistics
+                    for cloud-hosted
+                    environments using AWS CloudWatch,
+                    Prometheus, and &nbsp;&nbsp;&nbsp;Grafana, enabling proactive system management and
+                    optimization.<br>
+                    <b style="color:#77894d">•</b> Successfully built and configured 100+ EC2 instances on the AWS cloud
+                    platform, and skillfully
+                    managed the configuration of
+                    Elastic Load Balancer &nbsp;&nbsp;&nbsp;(ELB) for efficient traffic control among EC2 instances and
+                    S3 storage.<br>
+                    <b style="color:#77894d">•</b> Demonstrated extensive hands-on experience in AWS provisioning and
+                    in-depth knowledge of various
+                    AWS services.<br>
+
+
+                  </p>
+                </li>
+
+                <li>
+                  <div class="icon"></div>
+                  <span class="time">Sept 2020 – May 2022</span>
+                  <h5>Graduate Assistant | Operation and Facilities Department, The College of Saint Rose, Albany, NY
+                  </h5>
+                  <p> <b style="color:#77894d">•</b> Oversaw and ensured the smooth operation of the inventory control
+                    system, utilizing the TMA application.<br>
+                    <b style="color:#77894d">•</b> Actively updated and maintained inventory data using the TMA portal,
+                    ensuring accuracy and timeliness.<br>
+                    <b style="color:#77894d">•</b> Prepared and delivered data operation activities, effectively
+                    communicating the system&#39;s performance to stakeholders.<br>
+                    <b style="color:#77894d">•</b> Collaborated in the design and preparation of quarterly financial
+                    reports and budgeting activities.<br>
+                    <b style="color:#77894d">•</b> Spearheaded the creation and ongoing maintenance of the departmental
+                    database, encompassing data quality review,
+                    automated data extraction, &nbsp;&nbsp;&nbsp;and qualitative data collection, alongside developing
+                    comprehensive
+                    reports.<br>
+                    <b style="color:#77894d">•</b> Employed SQL to compile and validate data from relational databases,
+                    fulfilling business requirements and conducting statistical
+                    and geographical &nbsp;&nbsp;&nbsp;analysis to study the distribution and concentration of Key
+                    Performance Indicators
+                    (KPIs).<br>
+
+
+                  </p>
+                </li>
+
+
+                <li>
+                  <div class="icon"></div>
+                  <span class="time">Aug 2017 – Sept 2019</span>
+                  <h5>Business Intelligence Analyst | TUSAS Engine Industries Inc., Turkey</h5>
+                  <p>
+
+                    <b style="color:#77894d">•</b> Analyzed sales and advisements data to identify significant trends
+                    that influenced the company&#39;s business strategies.<br>
+                    <b style="color:#77894d">•</b> Strengthened data analysis capabilities and proficiency in handling
+                    large datasets and creating efficient workflows.<br>
+                    <b style="color:#77894d">•</b> Contributed to a 60% reduction in project timeline by collaborating
+                    with cross-functional teams, gathering data requirements,
+
+                    and assisting with &nbsp;&nbsp;&nbsp;data cleaning for Customer Success and Global Analytics
+                    teams.<br>
+                    <b style="color:#77894d">•</b> Conducted regular QA tests on retrieved data, ensuring its accuracy,
+                    and saving the Exemption Certificate Management team up
+                    to 30% of the time &nbsp;&nbsp;&nbsp;during the data validation process.<br>
+                    <b style="color:#77894d">•</b> Engaged in diverse professional development programs, encompassing
+                    networking, soft skills, data visualization, presentations,
+                    time management, &nbsp;&nbsp;&nbsp;and business writing, gaining valuable insights on the influence
+                    of soft skills
+                    &amp; driving business
+                    transformation.<br>
+
+                  </p>
+                </li>
+
+
+
+
+
+
+
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12 m-15px-tb">
+            <h3 class="col-title">My Education</h3>
+            <div class="utf-resume-box">
+              <ul>
+                <li>
+                  <div class="icon"></div>
+                  <span class="time">May 2022</span>
+                  <span class="time">GPA: 3.88</span>
+
+                  <h5>The College of Saint Rose, Albany, NY<span class="place">Master of Business Administration</span>
+                  </h5>
+                </li>
+
+                <li>
+                  <div class="icon"></div>
+                  <span class="time">June 2017</span>
+                  <span class="time">GPA: 3.34</span>
+
+                  <h5>Marmara University, Turkey<span class="place">Bachelor of Arts in Economics</span>
+                  </h5>
+                </li>
+                <!--  <li>
+              <div class="icon"></div>
+              <span class="time">May 2011</span> 
+              <h5>Bachelor of Science in Mechanical Engineering <span class="place">Hwa Hsia University of Technology, New Taipei City,Taiwan</span></h5>
+             
+            </li> -->
+
+
+
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12 m-15px-tb">
+            <h3 class="col-title">Certifications and Special Training:</h3>
+            <div class="utf-resume-box">
+              <ul>
+                <li>
+                  <div class="icon"></div>
+                  <!-- <span class="time">Sept 2021 – Dec 2021</span> -->
+                  <h5>AWS Certified Solutions Architect Associate | AWS Certified Cloud Practitioner | Sales Skills Boot
+                    Camp, The College of Saint
+                    Rose</h5>
+                </li>
+
+                <li>
+                  <div class="icon"></div>
+                  <!-- <span class="time">Sept 2021 – Dec 2021</span> -->
+                  <h5>CCI-Personality Inventory interpretation Training, Master Training International | Personal Data
+                    Protection Training</h5>
+                </li>
+
+                <li>
+                  <div class="icon"></div>
+                  <!-- <span class="time">Sept 2021 – Dec 2021</span> -->
+                  <h5>SAP Basic Training, TUSAS Engine Industries, Inc.</h5>
+                </li>
+
+
+
+
+
+
+
+
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12 m-15px-tb">
+            <h3 class="col-title">Languages:</h3>
+            <div class="utf-resume-box">
+              <ul>
+                <li>
+                  <div class="icon"></div>
+                  <!-- <span class="time">Sept 2021 – Dec 2021</span> -->
+                  <h5><b>English</b> : Full professional proficiency</h5>
+                </li>
+
+                <li>
+                  <div class="icon"></div>
+                  <!-- <span class="time">Sept 2021 – Dec 2021</span> -->
+                  <h5><b>Turkish</b> : Native or bilingual proficiency</h5>
+                </li>
+
+                <li>
+                  <div class="icon"></div>
+                  <!-- <span class="time">Sept 2021 – Dec 2021</span> -->
+                  <h5><b>Kurdish</b> : Native or bilingual proficiency</h5>
+                </li>
+
+
+
+
+
+
+
+
+              </ul>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Experience & Education Ends -->
+        <div class="pb-3 pt-5 utf-testimonials-section utf-single-section">
+          <div class="col-12">
+            <h3 class="pb-5 pb-sm-5 mb-3 mb-sm-0 text-center text-sm-center custom-title ft-wt-600">Technical Expertise
+              : </h3>
+          </div>
+
+
+
+          <h6 style="display: inline-block;" class="utf-client-name">DevOps Tools : </h6>&nbsp;
+          <span class="timee">Kubernetes</span>&nbsp;
+          <span class="timee">Helm Chart</span>&nbsp;
+          <span class="timee">Ansible</span>&nbsp;
+          <span class="timee">Jenkins</span>&nbsp;
+          <span class="timee">Terraform</span>&nbsp;
+          <span class="timee">GitLab</span>&nbsp;
+
+          <span class="timee">Docker</span>&nbsp;
+          <span class="timee">Docker-Compose</span>&nbsp;
+          <span class="timee">Git</span>&nbsp;
+          <span class="timee">GitLab</span>&nbsp;
+          <span class="timee">GitHub</span>&nbsp;
+          <span class="timee">Maven</span>&nbsp;
+
+
+          <span class="timee">Grafana</span>&nbsp;
+          <span class="timee">Prometheus</span>&nbsp;
+          <span class="timee">Slack</span>&nbsp;
+          <span class="timee">Jira</span>&nbsp;
+          <span class="timee">Nexus</span>&nbsp;
+
+          <br>
+          <h6 style="display: inline-block;" class="utf-client-name">Operating Systems : </h6>&nbsp;
+          <span class="timee">Microsoft Windows</span>&nbsp;
+          <span class="timee">Linux</span>&nbsp;
+
+
+          <br>
+          <h6 style="display: inline-block;" class="utf-client-name">Scripting and Programming Languages : </h6>&nbsp;
+          <span class="timee">Python</span>&nbsp;
+
+          <span class="timee">Java</span>&nbsp;
+          <span class="timee">Bash</span>&nbsp;
+          <span class="timee">Unix Shell</span>&nbsp;
+
+
+
+
+
+
+
+          <br>
+          <h6 style="display: inline-block;" class="utf-client-name">Networking Skills : </h6>&nbsp;
+          <span class="timee">TCP/IP Suite</span>&nbsp;
+          <span class="timee">DNS</span>&nbsp;
+          <span class="timee">DHCP</span>&nbsp;
+          <span class="timee">LAN</span>&nbsp;
+          <span class="timee">WAN</span>&nbsp;
+          <span class="timee">IPv4</span>&nbsp;
+          <span class="timee">IPv6</span>&nbsp;
+          <span class="timee">Firewall</span>&nbsp;
+
+
+
+
+
+          <br>
+          <h6 style="display: inline-block;" class="utf-client-name">Cloud Techonologies : </h6>&nbsp;
+          <span class="timee">AWS/EC2</span>&nbsp;
+          <span class="timee">EKS</span>&nbsp;
+          <span class="timee">ECR</span>&nbsp;
+          <span class="timee">VPC</span>&nbsp;
+          <span class="timee">S3</span>&nbsp;
+          <span class="timee">RDS</span>&nbsp;
+          <span class="timee">DynamoDB</span>&nbsp;
+
+          <span class="timee">Cloudformation</span>&nbsp;
+          <span class="timee">MariaDB</span>&nbsp;
+          <span class="timee">CloudWach</span>&nbsp;
+          <span class="timee">Route53</span>&nbsp;
+          <span class="timee">IAM</span>&nbsp;
+          <span class="timee">Secrets Manager</span>&nbsp;
+
+          <span class="timee">AWS Lambda</span>&nbsp;
+          <span class="timee">SNS</span>&nbsp;
+          <span class="timee">SQS</span>&nbsp;
+          <span class="timee">Auto-scaling</span>&nbsp;
+          <span class="timee">AWS Load Balancer</span>&nbsp;
+          <span class="timee">Web Application Firewall</span>&nbsp;
+
+
+          <span class="timee">Guard Duty</span>&nbsp;
+          <span class="timee">QuickSight</span>&nbsp;
+          <span class="timee">AWS Organizations</span>&nbsp;
+          <span class="timee">AWS APIGateway</span>&nbsp;
+          <span class="timee">Application Migration Service</span>&nbsp;
+          <span class="timee">Aws Cost Management</span>&nbsp;
+
+
+          
+          <span class="timee">Azure/ Azure Active Directory</span>&nbsp;
+          <span class="timee">Azure SQL</span>&nbsp;
+          <span class="timee">Vistual Machine</span>&nbsp;
+          <span class="timee">Azure CDN</span>&nbsp;
+          <span class="timee">Azure Fucntion</span>&nbsp;
+          <span class="timee">Azure DevOps</span>&nbsp;
+
+
+
+
+
+
+          <br>
+
+
+
+
+
+          <br>
+
+
+        </div>
+        <!-- Provide Services Starts -->
+
+        <div class="row pb-3 pt-5 utf-services-section">
+          <div class="col-12">
+            <h3 class="pb-5 pb-sm-5 mb-3 mb-sm-0 text-center text-sm-center custom-title ft-wt-600">What Can I Do</h3>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="utf-single-service">
+              <h6 class="utf-service-title">Business Strategy</h6>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="utf-single-service">
+              <h6 class="utf-service-title">Product Roadmap</h6>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="utf-single-service">
+              <h6 class="utf-service-title">Product Launches</h6>
+            </div>
+          </div>
+
+
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="utf-single-service">
+              <h6 class="utf-service-title">Product Marketing</h6>
+            </div>
+          </div>
+
+
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="utf-single-service">
+              <h6 class="utf-service-title">Strategic Planning</h6>
+            </div>
+          </div>
+
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="utf-single-service">
+              <h6 class="utf-service-title">Data Analysis </h6>
+            </div>
+          </div>
+
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="utf-single-service">
+              <h6 class="utf-service-title">UX research</h6>
+            </div>
+          </div>
+
+
+
+        </div>
+
+
+
+
+        <div class="row pb-3 pt-5 utf-services-section">
+          <div class="col-12">
+            <h3 class="pb-5 pb-sm-5 mb-3 mb-sm-0 text-center text-sm-center custom-title ft-wt-600">My Hobbies</h3>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="utf-box-stats with-margin">
+              <i class="fa fa-camera"></i>
+              <p class="m-0 position-relative">Photography</p>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="utf-box-stats with-margin">
+              <i class="fa fa-film"></i>
+              <p class="m-0 position-relative">Hiking & Adventure</p>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="utf-box-stats with-margin">
+              <i class="fa fa-cutlery"></i>
+              <p class="m-0 position-relative">Cooking</p>
+            </div>
+          </div>
+
+
+
+          <div class="col-12 col-md-6 col-lg-3">
+            <a target="_blank" href="https://www.instagram.com/karmaaaspheree/">
+              <div class="utf-box-stats with-margin">
+                <i class="fa fa-instagram"></i>
+                <p class="m-0 position-relative">Instagram</p>
+              </div>
+            </a>
+          </div>
+
+
+
+
+
+
+        </div>
+
+
+
+        <!-- Provide Services Ends -->
+
+
+
+      </div>
+
+
+  </div>
+
+
+
+  <!-- Testimonials section Ends -->
+
+
+  <!-- Choose Your Plan Ends -->
+  </div>
+  </section>
+  </div>
+  <!-- Main Content Ends -->
+
+
+
+  <div class="contact">
+    <!-- Page Title Starts -->
+    <section class="title-section text-center text-sm-center revealator-slideup revealator-once revealator-delay1">
+      <!-- <p class="utf-section-description">Connect Me</p>	 -->
+      <h1>Get In <span>Touch</span></h1>
+      <div class="animated-bar"></div>
+      <!-- <p class="text-max-700">Lorem ipsum dolor sit amet, consect adipisic elit, sed do eiusmod tempor incididunt ut labore et d magna aliqua enim sed do sit.</p> -->
+    </section>
+    <!-- Page Title Ends -->
+
+    <!-- Main Content Starts -->
+    <section id="contact"
+      class="main-content revealator-slideup revealator-once revealator-delay1 no-transform revealator-within">
+      <div class="container">
+        <div class="row">
+          <!-- Left Side Starts -->
+          <div class="col-12 col-lg-5">
+            <h4 class="utf-content-title">My Contact Info</h4>
+
+
+            <p class="utf-custom-span-contact position-relative"><i class="fa fa-map-marker position-absolute"></i>
+              <span class="d-block">Location</span>Jersey City, NJ 07302
+            </p>
+            <p class="utf-custom-span-contact position-relative"><i class="fa fa-linkedin position-absolute"></i> <span
+                class="d-block">LinkedIn</span><a target="_blank"
+                href="https://www.linkedin.com/in/ayhan-kaya-mba/">www.linkedin.com/in/ayhan-kaya-mba/</a></p>
+            <p class="utf-custom-span-contact position-relative"><i class="fa fa-envelope position-absolute"></i> <span
+                class="d-block">Email Address</span><a
+                href="mailto:Kilarudeekshitha@gmail.com">ayhankaya.2061@gmail.com</a></p>
+            <ul class="social list-unstyled pt-2 mb-5">
+
+
+              <li class="linkedin"><a title="Linkedin" target="_blank" href="https://www.linkedin.com/in/dck0ks3/"><i
+                    class="fa fa-linkedin"></i></a></li>
+
+                    <li class="linkedin"><a title="Linkedin" target="_blank" href="https://github.com/yhnkaya"><i
+                      class="fa fa-github"></i></a></li>
+              
+            
+              
+                    
+            </ul>
+            <!--    <ul class="social list-unstyled pt-2 mb-5">-->
+            <!--      <li class="facebook"><a title="Facebook" href="#"><i class="fa fa-facebook"></i></a></li>-->
+            <!--      <li class="linkedin"><a title="Linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>-->
+            <!--<li class="twitter"><a title="Twitter" href="#"><i class="fa fa-twitter"></i></a></li>-->
+            <!--<li class="instagram"><a title="Instagram" href="#"><i class="fa fa-instagram"></i></a></li>-->
+            <!--      <li class="whatsapp"><a title="Whatsapp" href="#"><i class="fa fa-whatsapp"></i></a></li>     -->
+            <!--    </ul>-->
+          </div>
+          <!-- Left Side Ends -->
+          <!-- Contact Form Starts -->
+          <div class="col-12 col-lg-7">
+            <form class="contactform utf-contact-form form mb-5" method="post" action="">
+              <h4 class="utf-content-title">Contact Me</h4>
+              <!-- Success Message -->
+              <!--  <div class="col-md-12 mt-3 p-0">-->
+              <!--<div class="alert alert-success utf-contact-msg" style="display:none;text-align:center;width:100%;" role="alert">       -->
+              <!--<div class="col-12 p-0">Your Message Was Sent Successfully.</div>-->
+              <!-- </div>-->
+              <!--  </div>-->
+              <div class="row">
+                <div style="margin-bottom: 20px;" class="col-12 col-md-6 input-group">
+                  <input type="text" name="name" id="name" class="form-control" placeholder="Your Name" required="">
+                </div>
+                <div style="margin-bottom: 20px;" class="col-12 col-md-6 input-group">
+                  <input name="email" type="email" id="email" class="form-control" placeholder="Your Email" required="">
+                </div>
+                <!--   <div style="margin-bottom: 20px;" class="col-12 col-md-6 input-group">
+                <input type="text" name="subject" id="subject" class="form-control" placeholder="Write a Subject" required="">
+              </div> -->
+                <!--  <div style="margin-bottom: 20px;" class="col-12 col-md-6 input-group">
+                <input type="number" name="phone" id="phone" class="form-control" placeholder="Phone Number" required="">
+              </div> -->
+                <div class="col-12 col-md-12 input-group">
+                  <textarea name="message" id="message" class="form-control" placeholder="Your Message..."
+                    required=""></textarea>
+                </div>
+                <div class="col-12 col-md-12 input-group">
+                  <button name="submit" type="submit" class="mx-auto btn btn_submit" value="Submit">Submit <i
+                      class="fa fa-envelope"></i></button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <!-- Contact Form Ends -->
+        </div>
+        <!-- Map Section Start -->
+
+        <!-- Map Section End -->
+      </div>
+      <center>
+        <h5 style="font-size: medium;">Powered By <a target="_blank" style="color:red;"
+            href="https://www.unitedopt.com/">United OPT</a></h5>
+      </center>
+    </section>
+    <!-- Contact Section Ends -->
+  </div>
+
+  <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("demo");
+      let captionText = document.getElementById("caption");
+      if (n > slides.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = slides.length }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+      captionText.innerHTML = dots[slideIndex - 1].alt;
+    }
+  </script>
+  <!-- JS Files -->
+  <script src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js"></script>
+  <script src="js/jquery-3.5.0.min.js"></script>
+  <script src="js/fm.revealator.jquery.min.js"></script>
+  <script src="js/imagesloaded.pkgd.min.js"></script>
+  <script src="js/masonry.pkgd.min.js"></script>
+  <script src="js/classie.js"></script>
+  <script src="js/jquery.hoverdir.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/modernizr.custom.js"></script>
+  <script src="js/typed.js"></script>
+  <script src="js/custom_jquery.js"></script>
+
+  <script src="js/jquery.hoverdir.js"></script>
+  <script src="js/tiny-slider.js"></script>
+  <script src="js/bootstrap.js"></script>
+
+
+  <script src="js/modernizr.custom.js"></script>
+  <script src="js/cbpGridGallery.js"></script>
+
+
+  <!--Map Js-->
+
+
+  <script>
+    var typed = new Typed('.typed-words', {
+      strings: ["DevOps Engineer", "Cloud Engineer"],
+      typeSpeed: 80,
+      backSpeed: 80,
+      backDelay: 4000,
+      startDelay: 1000,
+      loop: true,
+      showCursor: true
+    });
+  </script>
+  <script>
+    tns({
+      container: ".utf-testimonials-section .utf-testimonial-slider",
+      items: 2,
+      gutter: 30,
+      responsive: {
+        0: {
+          items: 1,
+          gutter: 0
+        },
+        768: {
+          items: 2,
+          gutter: 30
+        }
+      },
+      preventScrollOnTouch: "auto",
+      slideBy: "page",
+      mouseDrag: !0,
+      swipeAngle: !1,
+      speed: 400,
+      controls: !1,
+      autoHeight: !0,
+      navPosition: "bottom"
+    });
+  </script>
+  </script>
+</body>
+
+<!-- Mirrored from utouchdesign.com/themes/meetu/dark/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 06 Oct 2021 18:08:41 GMT -->
+
+</html>
