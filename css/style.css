@@ -1446,7 +1446,7 @@ h4.utf-content-title:after, .utf-content-title:after {
 	border: 1px solid #2f2f2f;
 	width: 100%;
 	background: #faebd7;
-	color: #fff;
+	color: #382222;
 	padding: 12px 20px;
 	margin-bottom: 25px;
 	border-radius: 4px;
@@ -1456,7 +1456,7 @@ h4.utf-content-title:after, .utf-content-title:after {
 .contact .contactform textarea {
 	border: 1px solid #2f2f2f;
 	background: #faebd7;
-	color: #fff;
+	color: #382222;
 	width: 100%;
 	padding: 12px 20px;
 	margin-bottom: 20px;
@@ -1470,7 +1470,7 @@ h4.utf-content-title:after, .utf-content-title:after {
 	border: 1px solid #2f2f2f !important;
 	width: 100%;
 	background: #faebd7;
-	color: #fff;
+	color: #382222;
 	padding: 12px 20px !important;
 	height:auto;
 	margin-bottom: 25px;
@@ -1481,7 +1481,7 @@ h4.utf-content-title:after, .utf-content-title:after {
 .utf-contact-form textarea {
 	border: 1px solid #2f2f2f !important;
 	background: #faebd7;
-	color: #fff;
+	color: #382222;
 	width: 100%;
 	padding: 12px 20px;
 	margin-bottom: 20px;
@@ -1496,7 +1496,7 @@ h4.utf-content-title:after, .utf-content-title:after {
 }
 .contact .contactform .output_message {
 	display: block;
-	color: #fff;
+	color: #382222;
 	height: 46px;
 	line-height: 46px;
 	border-radius: 30px;
